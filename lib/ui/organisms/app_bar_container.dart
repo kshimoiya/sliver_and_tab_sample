@@ -37,11 +37,13 @@ class AppBarContainer extends StatelessWidget {
                             child: Column(
                               children: <Widget>[
                                 // Anime Image Atom
-                                AnimeImage(
-                                    id: '1222',
-                                    imageUrl:
-                                        'https://images-na.ssl-images-amazon.com/images/I/91lGzi-QrvL._SL1500_.jpg',
-                                    width: constraint.maxWidth),
+                                Expanded(
+                                  child: AnimeImage(
+                                      id: '1222',
+                                      imageUrl:
+                                          'https://images-na.ssl-images-amazon.com/images/I/91lGzi-QrvL._SL1500_.jpg',
+                                      width: constraint.maxWidth),
+                                ),
                                 // Rating Container Molecule
                                 RatingContainer(
                                     height: height / 10,
